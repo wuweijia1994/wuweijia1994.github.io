@@ -125,7 +125,93 @@
 <h1 id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview</h1><p>This is a project aiming in control a solar-thermal disk to track the sun so that it could generate power at its max efficiency. In short, our goal is to let the figure \ref{mylabel} change to image 2.<br><img src="/2018/04/03/The-design-and-the-application-of-the-solar-thermal-control-system/close_loop_mov0.png" alt="&quot;Image 1&quot;\label{mylabel}"><br><em>image_caption</em></p>
 <p><img src="/2018/04/03/The-design-and-the-application-of-the-solar-thermal-control-system/close_loop_mov5.png" alt="alt text"></p>
 <h1 id="Simulation"><a href="#Simulation" class="headerlink" title="Simulation"></a>Simulation</h1><h2 id="Analysis"><a href="#Analysis" class="headerlink" title="Analysis"></a>Analysis</h2><p>To figure out the importance of the tracking sunlight accuracy to the power efficiency of the solar-thermal disk, we built up the model of it and use the <a href="https://www.lambdares.com/tracepro/" target="_blank" rel="noopener">TracePro</a> to simulate. The results are followed.<br><img src="/2018/04/03/The-design-and-the-application-of-the-solar-thermal-control-system/dish_simulation.png" alt="Image 1"><br><img src="/2018/04/03/The-design-and-the-application-of-the-solar-thermal-control-system/disk_sim_result0.png" alt="Image 1"><br><img src="/2018/04/03/The-design-and-the-application-of-the-solar-thermal-control-system/disk_sim_result1.png" alt="Image 1"></p>
-<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p>According to different results of different angles between the light and the normal of the disk, we could get the results as followed.<br>| Angle $/^{\circ}$ | Solar Power $/W$ | Absorbed Power $/W$ | Power Loss $/\%$ |<br>| — | — | — | — |<br>| 0    | 1027    | 1027    | 0 |<br>| 0.1    | 1027    | 992    | 3.41 |<br>| 0.5    | 1027    | 970    | 5.55 |<br>| 1    | 1027    | 892    | 13.15 |<br>| 2    | 1027    | 717    | 30.18 |<br>| 3    | 1027    | 573    | 44.206 |<br>| 4    | 1027    | 403    | 60.76 |<br>| 5    | 1027    | 241    | 76.53 |</p>
+<h2 id="Result"><a href="#Result" class="headerlink" title="Result"></a>Result</h2><p>According to different results of different angles between the light and the normal of the disk, we could get the results as followed.</p>
+<table>
+<thead>
+<tr>
+<th>Tables</th>
+<th style="text-align:center">Are</th>
+<th style="text-align:right">Cool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>col 3 is</td>
+<td style="text-align:center">right-aligned</td>
+<td style="text-align:right">$1600</td>
+</tr>
+<tr>
+<td>col 2 is</td>
+<td style="text-align:center">centered</td>
+<td style="text-align:right">$12</td>
+</tr>
+<tr>
+<td>zebra stripes</td>
+<td style="text-align:center">are neat</td>
+<td style="text-align:right">$1</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Angle $/^{\circ}$</th>
+<th>Solar Power $/W$</th>
+<th>Absorbed Power $/W$</th>
+<th>Power Loss $/\%$</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0</td>
+<td>1027</td>
+<td>1027</td>
+<td>0</td>
+</tr>
+<tr>
+<td>0.1</td>
+<td>1027</td>
+<td>992</td>
+<td>3.41</td>
+</tr>
+<tr>
+<td>0.5</td>
+<td>1027</td>
+<td>970</td>
+<td>5.55</td>
+</tr>
+<tr>
+<td>1</td>
+<td>1027</td>
+<td>892</td>
+<td>13.15</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1027</td>
+<td>717</td>
+<td>30.18</td>
+</tr>
+<tr>
+<td>3</td>
+<td>1027</td>
+<td>573</td>
+<td>44.206</td>
+</tr>
+<tr>
+<td>4</td>
+<td>1027</td>
+<td>403</td>
+<td>60.76</td>
+</tr>
+<tr>
+<td>5</td>
+<td>1027</td>
+<td>241</td>
+<td>76.53</td>
+</tr>
+</tbody>
+</table>
 <p>For the acceptable result, we need to control the disk to track sunlight within 0.1$/^{\circ}$.</p>
 <h1 id="Experiment"><a href="#Experiment" class="headerlink" title="Experiment"></a>Experiment</h1>
 
