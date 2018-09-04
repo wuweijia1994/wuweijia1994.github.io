@@ -122,10 +122,18 @@
 
 
 <!-- Content -->
-<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css"><div class=".article-gallery" <p="">#Demo Videos<p></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-JuPi_3y6hI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css"><div class=".article-gallery" <h1="" id="Overview"><a href="#Overview" class="headerlink" title="Overview"></a>Overview<h2 id="MPPI-Model-Predictive-Path-Integral-1"><a href="#MPPI-Model-Predictive-Path-Integral-1" class="headerlink" title="MPPI(Model Predictive Path Integral[1])"></a>MPPI(Model Predictive Path Integral[1])</h2><p>The basic idea of this algorithm is derived from the Model Predictive Control, in short, MPC. It first needs us to have the model or at least the approximated dynamic transition function. Then I generate a lot of sampled trajectories through the model. After that, I use a “Free Energy[2]” method to get a “best” action trajectory and move forward with one step.</p>
+<h2 id="Application-of-MPPI"><a href="#Application-of-MPPI" class="headerlink" title="Application of MPPI"></a>Application of MPPI</h2><p>In the paper[1], they tested it on the driving, and here I apply it onto the inverted pendulum and the picking task with a 7-degrees robot arm. I get a very exciting results and the following is the demo video.</p>
+<p>In all these task, I use the simulator as the model and define a simple reward function(<a href="https://en.wikipedia.org/wiki/Norm_(mathematics" target="_blank" rel="noopener">Norm2</a>)), without any training or learning. It is totally on-the-fly. </p>
+<p>The simulator I use is the <a href="http://www.mujoco.org/" target="_blank" rel="noopener">MuJoCo</a> platform.<br> <a href="https://github.com/wuweijia1994/MPPI.jl" target="_blank" rel="noopener">code</a></p>
+<h1 id="Demo-Videos"><a href="#Demo-Videos" class="headerlink" title="Demo Videos"></a>Demo Videos</h1><iframe width="560" height="315" src="https://www.youtube.com/embed/-JuPi_3y6hI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5b8GVx-guGM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<p>#Reference</p>
+<blockquote>
+<p>[1]Williams, G., Drews, P., Goldfain, B., Rehg, J. M., &amp; Theodorou, E. A. (2016, May). Aggressive driving with model predictive path integral control. In Robotics and Automation (ICRA), 2016 IEEE International Conference on (pp. 1433-1440). IEEE.<br>E. A. Theodorou and E. Todorov, “Relative entropy and free energy dualities: Connections to path integral and kl control,” in IEEE 51st IEEE Conference on Decision and Control (CDC), Dec 2012, pp. 1466–1473.<br>Thanks to Kendall in UW. He helped me a lot.</p>
+</blockquote>
 </div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
         var options = {
             selector: '.gallery-item'
